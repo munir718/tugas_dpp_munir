@@ -1,0 +1,58 @@
+{% extends 'profile/base.html' %}
+{% load static %}
+{% block content %}
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <p class="hello-text">Halo, saya</p>
+                    <h1 class="hero-title">ABDUL MUNIR</h1>
+                    <p class="hero-subtitle">Keamanan wed dan data analyst <data value=""></data></p>
+                    <p class="hero-description">saya adalah seorang data analyst yang mengubah data mentah menjadi
+                        insight binis yang dapat dio tindak lanjuti khususnya di bidang e-commerce.</p>
+                    <div class="hero-buttons">
+                        <a href="{% url 'profile:about' %}" class="btn btn-primary-custom me-3"><i
+                                class="fas fa-user-circle"></i> Tentang Saya</a>
+                        <a href="{% url 'profile:gallery' %}" class="btn btn-outline-custom"><i
+                                class="fas fa-image"></i> Lihat Gallery</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image">
+                    <div class="image-decoration"></div>
+                    <div class="profile-image-wrapper">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.0VX8WYz_X3sJs12Ap3AGjwHaEK?pid=Api&P=0&h=180"
+                            alt="Profile" class="img-fluid profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="skills-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Keahlian Saya</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h4>Data analyst</h4>
+                    <p>Membuat dashboard monitoring penjualan real-time yang terhubung langsung ke database perusahaan,
+                        menganalisis pola pembelian pelanggan untuk identifikasi segmentasi pasar.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                    <h4>keamanan web</h4>
+                    <p>Mengamankan website dari serangan siber dengan menerapkan HTTPS/SSL.</p>
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock %}
